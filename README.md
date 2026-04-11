@@ -19,9 +19,13 @@ A router simulates external connectivity using a loopback interface, allowing va
 -Inter-VLAN Routing (SVIs on Layer 3 switch)
 
 -EtherChannel (LACP)
+
 -Trunking (802.1Q)
+
 -Static Routing
+
 -Layer 3 Switching
+
 -Default Routing
 
 
