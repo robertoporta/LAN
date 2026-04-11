@@ -14,10 +14,13 @@ A router simulates external connectivity using a loopback interface, allowing va
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure
-- Remote Desktop (RDP)
-- osTicket
-- Internet Information Services (IIS)
+-VLANs (802.1Q segmentation)
+-Inter-VLAN Routing (SVIs on Layer 3 switch)
+-EtherChannel (LACP)
+-Trunking (802.1Q)
+-Static Routing
+-Layer 3 Switching
+-Default Routing
 
 <h2>Operating Systems Used </h2>
 
