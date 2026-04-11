@@ -12,7 +12,7 @@ A router simulates external connectivity using a loopback interface, allowing va
 </p>
 
 
-<h2>Environments and Technologies Used</h2>
+<h2>Technologies Used</h2>
 
 -VLANs (802.1Q segmentation)
 -Inter-VLAN Routing (SVIs on Layer 3 switch)
@@ -21,10 +21,6 @@ A router simulates external connectivity using a loopback interface, allowing va
 -Static Routing
 -Layer 3 Switching
 -Default Routing
-
-<h2>Operating Systems Used </h2>
-
-- Windows 10</b> (22H2)
 
 
 <h2>Ticket Workflow and Resolution Process</h2>
