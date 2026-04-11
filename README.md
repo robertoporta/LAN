@@ -6,7 +6,6 @@
 This lab demonstrates a small-scale enterprise campus LAN with an added edge routing layer to simulate real-world upstream connectivity.
 
 The network is segmented into Engineering and Operations VLANs, with a Layer 3 switch providing inter-VLAN routing via SVIs. Redundant uplinks are bundled using EtherChannel (LACP).
-
 An edge router forwards default traffic to an upstream router that simulates an ISP using a loopback interface, enabling realistic end-to-end traffic flow beyond the LAN.
 
 </p>
