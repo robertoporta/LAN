@@ -15,7 +15,9 @@ A router simulates external connectivity using a loopback interface, allowing va
 <h2>Technologies Used</h2>
 
 -VLANs (802.1Q segmentation)
+
 -Inter-VLAN Routing (SVIs on Layer 3 switch)
+
 -EtherChannel (LACP)
 -Trunking (802.1Q)
 -Static Routing
