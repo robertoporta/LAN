@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>Campus LAN with VLAN Segmentation, Inter-VLAN Routing, EtherChannel, and Upstream Routing</h1>
+<h1>Leaf–Spine Campus LAN with VLAN Segmentation, Inter-VLAN Routing, EtherChannel, and Upstream Routing</h1>
 This lab demonstrates a small-scale enterprise campus LAN with an added edge routing layer to simulate real-world upstream connectivity.
 
 The network is segmented into Engineering and Operations VLANs, with a Layer 3 switch providing inter-VLAN routing via SVIs. Redundant uplinks are bundled using EtherChannel (LACP).
