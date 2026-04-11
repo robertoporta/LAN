@@ -3,11 +3,11 @@
 </p>
 
 <h1>Campus LAN with VLANs, Inter-VLAN Routing, EtherChannel</h1>
-This lab demonstrates a small-scale enterprise campus LAN using a hierarchical design with access and distribution layers.
+This lab demonstrates a small-scale enterprise campus LAN with an added edge routing layer to simulate real-world upstream connectivity.
 
-The network is segmented into Engineering and Operations VLANs, with a Layer 3 switch providing inter-VLAN routing via SVIs. Redundant uplinks are bundled using EtherChannel (LACP) to increase bandwidth and resiliency.
+The network is segmented into Engineering and Operations VLANs, with a Layer 3 switch providing inter-VLAN routing via SVIs. Redundant uplinks are bundled using EtherChannel (LACP).
 
-A router simulates external connectivity using a loopback interface, allowing validation of end-to-end traffic flow beyond the LAN.
+An edge router forwards default traffic to an upstream router that simulates an ISP using a loopback interface, enabling realistic end-to-end traffic flow beyond the LAN.
 
 </p>
 
