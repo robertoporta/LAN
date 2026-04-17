@@ -3,10 +3,8 @@
 </p>
 
 <h1>Leaf–Spine Campus LAN with VLAN Segmentation, Inter-VLAN Routing, EtherChannel, and Upstream Routing</h1>
-This lab implements a leaf–spine campus network architecture to demonstrate scalable Layer 3 design principles used in modern enterprise environments.
-Two distribution (spine) Layer 3 switches form the core of the network, handling routing between VLANs and upstream connectivity. Two access (leaf) switches provide endpoint connectivity, with all client devices connected at the edge layer.
-Redundant uplinks between access and distribution switches are configured using EtherChannel (LACP) to improve bandwidth and provide link resilience. An edge router forwards traffic to an upstream ISP router, which simulates external internet connectivity using a loopback interface.
-This design demonstrates scalable routing, redundancy, VLAN segmentation, and hierarchical network architecture principles.
+This lab builds and configures a full leaf–spine Layer 3 network topology with dual spine switches, dual leaf switches, VLAN segmentation, and OSPF dynamic routing for end-to-end connectivity. The spine switches act as the core, while the leaf switches provide access-layer connectivity for end devices.
+All links use /30 subnets, and OSPF advertises only directly connected networks for precise routing. Redundant uplinks ensure high availability. An ISP router simulates internet connectivity using a loopback address (8.8.8.8), allowing verification of external reachability from within the network.
 </p>
 
 
