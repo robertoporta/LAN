@@ -28,9 +28,6 @@ All links use /30 subnets, and OSPF advertises only directly connected networks 
 <h2>Ticket Workflow and Resolution Process</h2>
 
 <p>
-<img width="1196" height="896" alt="Image" src="https://github.com/user-attachments/assets/ef629a9c-6d55-4166-bef1-73d9bda0f60a" />
-</p>
-<p>
 - First, I configure and enable the interface toward the ISP using the subnet 10.0.0.0/30 so I can connect the enterprise network to the simulated internet. The ISP router is using 10.0.0.2 for its interface.
 Next, I configure and enable two additional interfaces toward SPINE1 and SPINE2 using separate /30 subnets so I can provide redundant upstream routing paths. The subnet between R1 and SPINE1 will be 10.0.0.4/30 and the subnet between R1 and SPINE2 will be 10.0.0.8/30.
 </p>
