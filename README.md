@@ -37,17 +37,21 @@ Next, I configure and enable two additional interfaces toward SPINE1 and SPINE2 
 <p>
 <img width="1126" height="802" alt="Image" src="https://github.com/user-attachments/assets/2789f98a-94af-4701-85ea-82d33a1bb949" />
 </p>
+<br>
 
 <p>
 - For internet connections, I configure a default route toward the ISP so unknown traffic can exit the enterprise network. Next, I enable OSPF in area 0 so internal devices can dynamically learn routes. To finish R1’s configuration, I advertise the default route into OSPF so all internal networks can reach the internet.
 </p>
-<br />
-
 <p>
 <img width="1127" height="803" alt="Image" src="https://github.com/user-attachments/assets/0aee868f-c73f-4992-a5a0-c7631301b60f" />
 </p>
+<br />
+
 <p>
-- Similarly, I set the SLA plan to severity level C. This determines the expected response and resolution time, ensuring that even lower-priority issues are handled within a reasonable timeframe according to company policy.
+- For internet connections, I configure a default route toward the ISP so unknown traffic can exit the enterprise network. Next, I enable OSPF in area 0 so internal devices can dynamically learn routes. To finish R1’s configuration, I advertise the default route into OSPF so all internal networks can reach the internet.
+</p>
+<p>
+<img width="681" height="167" alt="image" src="https://github.com/user-attachments/assets/6fb86b44-231f-4091-9495-ffb4b2f0dcc3" />
 </p>
 <br />
 
