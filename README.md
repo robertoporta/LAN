@@ -35,17 +35,9 @@ All links use /30 subnets, and OSPF advertises only directly connected networks 
 Next, I configure and enable two additional interfaces toward SPINE1 and SPINE2 using separate /30 subnets so I can provide redundant upstream routing paths. The subnet between R1 and SPINE1 will be 10.0.0.4/30 and the subnet between R1 and SPINE2 will be 10.0.0.8/30.
 </p>
 <p>
-<img width="1126" height="802" alt="Image" src="https://github.com/user-attachments/assets/2789f98a-94af-4701-85ea-82d33a1bb949" />
+<img width="895" height="527" alt="image" src="https://github.com/user-attachments/assets/ec94414e-55c1-4ab2-a4d3-12c85e797ad8" />
 </p>
 <br>
-
-<p>
-- For internet connections, I configure a default route toward the ISP so unknown traffic can exit the enterprise network. Next, I enable OSPF in area 0 so internal devices can dynamically learn routes. To finish R1’s configuration, I advertise the default route into OSPF so all internal networks can reach the internet.
-</p>
-<p>
-<img width="1127" height="803" alt="Image" src="https://github.com/user-attachments/assets/0aee868f-c73f-4992-a5a0-c7631301b60f" />
-</p>
-<br />
 
 <p>
 - For internet connections, I configure a default route toward the ISP so unknown traffic can exit the enterprise network. Next, I enable OSPF in area 0 so internal devices can dynamically learn routes. To finish R1’s configuration, I advertise the default route into OSPF so all internal networks can reach the internet.
@@ -56,8 +48,12 @@ Next, I configure and enable two additional interfaces toward SPINE1 and SPINE2 
 <br />
 
 <p>
-<img width="1126" height="802" alt="Image" src="https://github.com/user-attachments/assets/7dcc89c5-ee42-4c24-9be6-22a6b166e299" />
+Next up is SPINE1, where I enable Layer 3 routing so the switch can function as a routing device. Then I convert the uplink interfaces into routed ports using “no switchport” so they can carry Layer 3 traffic. The connection to R1 uses the 10.0.0.4/30 subnet, while the connections down to the leaf switches use 10.0.1.0/30 for LEAF1 and 10.0.1.4/30 for LEAF2. After that, I assign IP addresses to each interface and bring them up so communication can be established.
 </p>
+<p>
+<img width="896" height="581" alt="image" src="https://github.com/user-attachments/assets/f7f484f4-6bf3-4df7-a391-b0b0747ce48f" />
+</p>
+
 <p>
 - After making these changes, I reply to the user with basic questions to gather more information. Collecting clear details early helps prevent unnecessary delays and allows me to better diagnose the root cause of the issue.
 </p>
