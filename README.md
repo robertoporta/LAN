@@ -48,38 +48,104 @@ Next, I configure and enable two additional interfaces toward SPINE1 and SPINE2 
 <br />
 
 <p>
-Next up is SPINE1, where I enable Layer 3 routing so the switch can function as a routing device. Then I convert the uplink interfaces into routed ports using “no switchport” so they can carry Layer 3 traffic. The connection to R1 uses the 10.0.0.4/30 subnet, while the connections down to the leaf switches use 10.0.1.0/30 for LEAF1 and 10.0.1.4/30 for LEAF2. After that, I assign IP addresses to each interface and bring them up so communication can be established.
+- Next up is SPINE1, where I enable Layer 3 routing so the switch can function as a routing device. Then I convert the uplink interfaces into routed ports using “no switchport” so they can carry Layer 3 traffic. The connection to R1 uses the 10.0.0.4/30 subnet, while the connections down to the leaf switches use 10.0.1.0/30 for LEAF1 and 10.0.1.4/30 for LEAF2. After that, I assign IP addresses to each interface and bring them up so communication can be established.
 </p>
 <p>
 <img width="896" height="581" alt="image" src="https://github.com/user-attachments/assets/f7f484f4-6bf3-4df7-a391-b0b0747ce48f" />
 </p>
+<br />
 
 <p>
-- After making these changes, I reply to the user with basic questions to gather more information. Collecting clear details early helps prevent unnecessary delays and allows me to better diagnose the root cause of the issue.
+- Lastly on SPINE1, I enable OSPF so it can participate in dynamic routing, and advertise all connected networks.
+</p>
+<p>
+<img width="894" height="155" alt="image" src="https://github.com/user-attachments/assets/4df1b2fd-8b1b-43a8-a9f9-8a41a787eadf" />
+</p>
+<br>
+
+<p>
+- Onto the SPINE2 core switch, I also start by enabling Layer 3 routing so SPINE2 can operate in the routing core. Next, I configure routed interfaces toward R1 and the leaf switches. The link between SPINE2 and R1 uses the 10.0.0.8/30 subnet, while the links down to the leaf switches use 10.0.1.8/30 and 10.0.1.12/30. Lastly, I enable all interfaces so routing can begin.
+</p>
+<img width="893" height="580" alt="image" src="https://github.com/user-attachments/assets/91946bc8-f382-49aa-b6b9-62d1a833484a" />
 </p>
 <br />
 
 <p>
-<img width="1128" height="802" alt="Image" src="https://github.com/user-attachments/assets/fd8f7fc5-c0f0-4e04-9704-f5896b1d6f60" />
+To finish on SPINE2, I enable OSPF on SPINE2 so it can participate in the shared dynamic routing domain across the spine and leaf architecture.
 </p>
 <p>
-- When the user replies, I follow up by giving them steps that can potentially help resolve the issue. This collaborative approach helps users learn small troubleshooting steps while allowing me to confirm whether the problem is software, hardware, or configuration related.
-</p>
-
-<br />
-<img width="1128" height="803" alt="Image" src="https://github.com/user-attachments/assets/d9596381-fd7b-4796-ac40-7b63e88cf19b" />
-</p>
-<p>
-- After identifying the issue and confirming that the user is fine with keeping the system as is, the ticket comes to an end. I make sure the user’s request has been fully addressed and that they are satisfied with the outcome.
+<img width="893" height="155" alt="image" src="https://github.com/user-attachments/assets/d8e80ed5-4ed7-4419-9383-47c8315c1141" />
 </p>
 <br />
 
 <p>
-<img width="1124" height="803" alt="Image" src="https://github.com/user-attachments/assets/379753ec-ffc5-4f94-b913-077550c5b7ff" />
+- This is an updated view of what the topology looks like up to this point, with added subnet labels. Being able to know all the subnets is something crucial for configuring interfaces and troubleshooting issues you might run into.
 </p>
 <p>
-- Finally, I change the ticket status to “Resolved” and close it. Properly closing tickets keeps the help desk system organized, ensures performance metrics stay accurate, and confirms that the issue has been officially completed.
+<img width="693" height="577" alt="image" src="https://github.com/user-attachments/assets/4404d8d8-d8d7-4b91-9ff3-77c31972c6dd" />
 </p>
 <br />
 
+<p>
+- Going down the topology, next is the configuration for the LEAF1 and LEAF2 access switches. First in LEAF1, I begin by enabling Layer 3 routing on LEAF1 so the switch can perform inter-VLAN routing and participate in dynamic routing. I then create VLAN 10 to represent the Engineering network segment. The subnet will be 192.168.10.0/24, which will be used by devices connected to LEAF1. To allow hosts in this VLAN to communicate outside their local network, I configure an SVI with IP address 192.168.10.1/24, which serves as the default gateway for all Engineering devices.
+</p>
+<p>
+<img width="752" height="249" alt="image" src="https://github.com/user-attachments/assets/2638c531-2a60-4519-9ad3-0bf3938acbfe" />
+</p>
+<br>
+
+<p>
+- 
+</p>
+<p>
+
+</p>
+<br>
+
+<p>
+- 
+</p>
+<p>
+
+</p>
+<br>
+
+<p>
+- 
+</p>
+<p>
+
+</p>
+<br>
+
+<p>
+- 
+</p>
+<p>
+
+</p>
+<br>
+
+<p>
+- 
+</p>
+<p>
+
+</p>
+<br>
+
+<p>
+- 
+</p>
+<p>
+
+</p>
+<br>
+
+<p>
+- 
+</p>
+<p>
+
+</p>
 <br>
