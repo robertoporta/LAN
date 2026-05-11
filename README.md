@@ -156,7 +156,7 @@ To finish on SPINE2, I enable OSPF on SPINE2 so it can participate in the shared
 <img width="893" height="227" alt="image" src="https://github.com/user-attachments/assets/745c8f24-7929-4308-8e71-b7eb5c675f17" />
 </p>
 <p>
-<img width="898" height="226" alt="image" src="https://github.com/user-attachments/assets/3eff53fc-30ad-4cdc-8c17-43fb1cc90558" />
+<img width="893" height="225" alt="image" src="https://github.com/user-attachments/assets/a4eec9a1-2a35-4545-ba2c-24af2001c7ca" />
 </p>
 <p>
 <img width="895" height="228" alt="image" src="https://github.com/user-attachments/assets/34f0995e-2b22-4ace-91b1-b8cd20739be5" />
@@ -173,7 +173,7 @@ To finish on SPINE2, I enable OSPF on SPINE2 so it can participate in the shared
 <img width="857" height="335" alt="image" src="https://github.com/user-attachments/assets/c5429dda-ffef-406c-b783-b541ca6e4830" />
 </p>
 <p>
-<img width="896" height="226" alt="image" src="https://github.com/user-attachments/assets/7c4bd71c-1b28-43e2-8d8c-452cda1d6639" />
+<img width="891" height="345" alt="image" src="https://github.com/user-attachments/assets/1eb88988-b44d-4da1-ab8b-663a51944b56" />
 </p>
 <p>
 <img width="894" height="402" alt="image" src="https://github.com/user-attachments/assets/4f9539f5-39d7-4635-9cee-49883f4bd9c5" />
