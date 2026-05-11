@@ -173,7 +173,7 @@ To finish on SPINE2, I enable OSPF on SPINE2 so it can participate in the shared
 <img width="857" height="335" alt="image" src="https://github.com/user-attachments/assets/c5429dda-ffef-406c-b783-b541ca6e4830" />
 </p>
 <p>
-<img width="892" height="345" alt="image" src="https://github.com/user-attachments/assets/9750b531-d380-4e8e-a9fc-531b4004231e" />
+<img width="896" height="226" alt="image" src="https://github.com/user-attachments/assets/7c4bd71c-1b28-43e2-8d8c-452cda1d6639" />
 </p>
 <p>
 <img width="894" height="402" alt="image" src="https://github.com/user-attachments/assets/4f9539f5-39d7-4635-9cee-49883f4bd9c5" />
