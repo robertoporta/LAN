@@ -7,6 +7,9 @@ This lab builds and configures a full leaf–spine Layer 3 network topology with
 All links use /30 subnets, and OSPF advertises only directly connected networks for precise routing. Redundant uplinks ensure high availability. An ISP router simulates internet connectivity using a loopback address (8.8.8.8), allowing verification of external reachability from within the network. The following image shows what the topology looks like after the initial cable connections, pre-configuration.
 </p>
 
+<p>
+<img width="564" height="470" alt="image" src="https://github.com/user-attachments/assets/ea0bf4f2-a0bc-48b2-ad4b-36cc4b27e98f" />
+</p>
 
 <h2>Technologies Used</h2>
 
@@ -31,12 +34,12 @@ All links use /30 subnets, and OSPF advertises only directly connected networks 
 - First, I configure and enable the interface toward the ISP using the subnet 10.0.0.0/30 so I can connect the enterprise network to the simulated internet. The ISP router is using 10.0.0.2 for its interface.
 Next, I configure and enable two additional interfaces toward SPINE1 and SPINE2 using separate /30 subnets so I can provide redundant upstream routing paths. The subnet between R1 and SPINE1 will be 10.0.0.4/30 and the subnet between R1 and SPINE2 will be 10.0.0.8/30.
 </p>
-
 <p>
 <img width="1126" height="802" alt="Image" src="https://github.com/user-attachments/assets/2789f98a-94af-4701-85ea-82d33a1bb949" />
 </p>
+
 <p>
-- After reviewing the ticket and confirming that the issue does not affect productivity, I set the priority level to low. This ensures that more urgent issues are addressed first while keeping the workflow organized and efficient.
+- For internet connections, I configure a default route toward the ISP so unknown traffic can exit the enterprise network. Next, I enable OSPF in area 0 so internal devices can dynamically learn routes. To finish R1’s configuration, I advertise the default route into OSPF so all internal networks can reach the internet.
 </p>
 <br />
 
