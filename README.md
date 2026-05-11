@@ -1,6 +1,4 @@
 # <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
 
 <h1>Spine-Leaf Campus LAN with VLAN Segmentation, Inter-VLAN Routing, and Upstream Routing</h1>
 This lab builds and configures a full leaf–spine Layer 3 network topology with dual spine switches, dual leaf switches, VLAN segmentation, and OSPF dynamic routing for end-to-end connectivity. The spine switches act as the core, while the leaf switches provide access-layer connectivity for end devices.
