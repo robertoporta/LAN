@@ -1,5 +1,5 @@
 # <p align="center">
-<h1>Spine-Leaf Campus LAN with VLAN Segmentation, Inter-VLAN Routing, and Upstream Routing</h1>
+<h1>Enterprise Leaf–Spine Layer 3 Architecture with OSPF Redundancy and Internet Failover</h1>
 This lab builds and configures a full leaf–spine Layer 3 network topology with dual spine switches, dual leaf switches, VLAN segmentation, and OSPF dynamic routing for end-to-end connectivity. The spine switches act as the core, while the leaf switches provide access-layer connectivity for end devices.
 All links use /30 subnets, and OSPF advertises only directly connected networks for precise routing. Redundant uplinks ensure high availability. An ISP router simulates internet connectivity using a loopback address (8.8.8.8), allowing verification of external reachability from within the network. The following image shows what the topology looks like after the initial cable connections, pre-configuration.
 </p>
