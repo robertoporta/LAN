@@ -192,14 +192,8 @@ To finish on SPINE2, I enable OSPF on SPINE2 so it can participate in the shared
 - Finally, I manually disabled SPINE2’s G0/2 interface to simulate a failure. I run the command again, and the ping is still successful. The tracert command shows that this time the packet went from LEAF2 to SPINE1’s FA/1 interface (10.0.1.5). This redundancy helps the uptime of a network, with connection to the internet still happening even if failure occurs.
 </p>
 <p>
-
-</p>
-<br>
-
-<p>
-- 
+<img width="902" height="747" alt="image" src="https://github.com/user-attachments/assets/6052e483-4b2d-4df6-9717-e2a022c20ec8" />
 </p>
 <p>
-
+<img width="776" height="667" alt="image" src="https://github.com/user-attachments/assets/5937ed73-6df9-40f0-b0c6-bbfb4c84771e" />
 </p>
-<br>
