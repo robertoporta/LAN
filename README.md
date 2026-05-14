@@ -3,6 +3,9 @@
 This lab builds and configures a full leaf–spine Layer 3 network topology with dual spine switches, dual leaf switches, VLAN segmentation, and OSPF dynamic routing for end-to-end connectivity. The spine switches act as the core, while the leaf switches provide access-layer connectivity for end devices.
 All links use /30 subnets, and OSPF advertises only directly connected networks for precise routing. Redundant uplinks ensure high availability. An ISP router simulates internet connectivity using a loopback address (8.8.8.8), allowing verification of external reachability from within the network. The following image shows what the topology looks like after the initial cable connections, pre-configuration.
 </p>
+<p>
+<img width="561" height="468" alt="image" src="https://github.com/user-attachments/assets/e937e211-8553-4bab-8083-2be625618b24" />
+</p>
 <br>
 
 <p>
